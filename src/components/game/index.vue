@@ -8,7 +8,7 @@
 <script>
 import Phaser from "phaser";
 // https://phaser.io/tutorials/making-your-first-phaser-3-game-chinese
-
+// https://github.com/Sun0fABeach/vue-phaser3/tree/master/src/game
 const config = {
     type: Phaser.AUTO,
     width: 800,
