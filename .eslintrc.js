@@ -16,7 +16,7 @@ module.exports = {
         "ecmaVersion": 2018,
         "sourceType": "module",
         "extends": "standard",
-	    "parser": "babel-eslint"
+        "parser": "babel-eslint"
     },
     "plugins": [
         "vue"
