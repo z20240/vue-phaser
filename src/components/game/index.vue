@@ -6,33 +6,13 @@
 </template>
 
 <script>
-import Phaser from "phaser";
-// https://phaser.io/tutorials/making-your-first-phaser-3-game-chinese
-// https://github.com/Sun0fABeach/vue-phaser3/tree/master/src/game
-const config = {
-    type: Phaser.AUTO,
-    width: 800,
-    height: 600,
-    parent: "game-area",
-    physics: {
-        default: "arcade",
-        arcade: {
-            gravity: { y: 300 },
-            debug: false
-        }
-    },
-    scene: [  ]
-};
+
 
 export default {
     name: "app",
-    data() {
-        return {
-            game: null,
-        };
-    },
-    mounted() {
-        this.game = new Phaser.Game(config);
+    async mounted() {
+        const game = await import('@/components/game/scene');
+        this.$nextTick(() => game.launch());
     }
 };
 </script>

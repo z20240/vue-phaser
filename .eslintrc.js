@@ -14,12 +14,16 @@ module.exports = {
     },
     "parserOptions": {
         "ecmaVersion": 2018,
-        "sourceType": "module"
+        "sourceType": "module",
+        "extends": "standard",
+	    "parser": "babel-eslint"
     },
     "plugins": [
         "vue"
     ],
     "rules": {
-        "indent": [2, 4]
+        "indent": [2, 4],
+        "no-console": "off",
+        "parser": "babel-eslint"
     }
 };
